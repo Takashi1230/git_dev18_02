@@ -222,7 +222,13 @@ function invincible(){
                 reset();
             }else if(speechResult == "ダウンロード"){
                 download(); //試行結果のCSVダウンロード
-            }else{
+            }else if(speechResult == "じゃんけんグー"){
+		    rsp(0);
+	    }else if(speechResult == "じゃんけん チョキ"){
+		    rsp(1);
+	    }else if(speechResult == "じゃんけんパー"){
+		    rsp(2);
+	    }else{
                 result.innerHTML = e.results[0][0].transcript;
             }
       
