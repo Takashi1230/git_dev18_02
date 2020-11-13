@@ -244,7 +244,7 @@ function download(){
     var encodedUri = encodeURI(csvContent);
     let link = document.createElement('a');
     link.setAttribute("href", encodedUri);
-
+　
     let today = new Date();
     let todayDate = today.getFullYear() + ('0'+(today.getMonth()+1)).slice(-2)+ ('0'+today.getDate()).slice(-2);
     link.setAttribute("download", 'ジャンケン結果_'+todayDate+'.csv');
