@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript/jQuery1回目</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+  <div class="text-center mb-3">
+    <a href="#googtrans(ja|en)" class="lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a> 
+    <a href="#googtrans(ja|zh-CN)" class="lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="China"></a> 
+    <a href="#googtrans(ja|es)" class="lang-select" data-lang="es"><img src="https://www.solodev.com/assets/google-translate/flag-mexico.png" alt="MEXICO"></a>
+    <a href="#googtrans(ja|fr)" class="lang-select" data-lang="fr"><img src="https://www.solodev.com/assets/google-translate/flag-france.png" alt="France"></a>
+    <a href="#googtrans(ja|ja)" class="lang-select" data-lang="ja"><img src="https://www.solodev.com/assets/google-translate/flag-japan.png" alt="JAPAN"></a>
+  </div>
+ 
+  <input type="button" value="グー" onclick="rsp(0);">
+  <input type="button" value="チョキ" onclick="rsp(1);">
+  <input type="button" value="パー" onclick="rsp(2);">
+  <input type="text" id="number1" class="num" placeholder="好きな回数を入力してください">
+  <input type="button" value="じゃんけんシミュレーション" onclick="sim();">
+  <input type="button" value="履歴リセット" onclick="reset();">
+  <input type="button" id="button" value="?" onclick="invincible();">
+  <h1 id="result"></h1>
+  <div>
+      <div id="player"></div>
+      <div id="ahand"></div>
+      <div id="computer"></div>
+      <div id="bhand"></div>
+      <div id="resultMsg"></div>
+      <div id="winrate"></div>
+      <div id="history"></div>
+  </div>
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="js/test.js"></script>
+  
+</body>
+
+</html>
