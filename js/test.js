@@ -244,19 +244,5 @@ function download(){
     link.setAttribute("download", 'ジャンケン結果_'+todayDate+'.csv');
     document.body.appendChild(link); // Required for FF
     
-    link.click(); // This will download the data file.
-
+    link.click(); // リンクをクリックしてダウンロード
 }
-
-$('.lang-select').click(function() {
-    var lang = $(this).attr('data-lang');
-    window.location = $(this).attr('href');
-    window.location.reload();
-  });
-
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'ja', 
-      layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
-    }, 'google_translate_element');
-  }
