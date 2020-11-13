@@ -222,11 +222,15 @@ function invincible(){
                 reset();
             }else if(speechResult == "ダウンロード"){
                 download(); //試行結果のCSVダウンロード
+		    result.innerHTML = "試行回数と勝率のデータをダウンロードしました。";
             }else if(speechResult == "じゃんけんグー"){
+		result.innerHTML = e.results[0][0].transcript;
 		    rsp(0);
 	    }else if(speechResult == "じゃんけん チョキ"){
+		    result.innerHTML = e.results[0][0].transcript;
 		    rsp(1);
 	    }else if(speechResult == "じゃんけんパー"){
+		    result.innerHTML = e.results[0][0].transcript;
 		    rsp(2);
 	    }else{
                 result.innerHTML = e.results[0][0].transcript;
